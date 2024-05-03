@@ -1,4 +1,6 @@
-c\ alsdjfa
+DROP DATABASE IF EXITS scd_users;
+CREATE DATABASE scd_users;
+c\ scd_users;
 
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,

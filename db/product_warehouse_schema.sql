@@ -1,4 +1,6 @@
-\c asldkfjas
+DROP DATABASE IF EXISTS scd_products;
+CREATE DATABASE scd_products;
+\c scd_products;
 
 CREATE TABLE cream (
     id SERIAL PRIMARY KEY,
