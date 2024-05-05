@@ -2,23 +2,23 @@ const db = require('../db/dbConfig');
 
 const getAllProducts = async () => {
     try {
-        const allCode = await db.any('SELECT * FROM code_snippets');
+        const allCode = await db.any('SELECT * FROM scd_products');
         return allCode;
     } catch (e) {
         return e;
     }
 };
 
-const getCodeSnippet = async (difficulty) => {
+const getCreams = async () => {
     try {
-        const oneCode = await db.any('SELECT * FROM code_snippets WHERE difficulty=$1', difficulty);
-        return oneCode;
+        const creams = await db.any('SELECT * FROM cream');
+        return creams;
     } catch (e) {
         return e;
     }
 };
 
 module.exports = {
-    getAllCodeSnippets,
-    getCodeSnippet,
+    getAllProducts,
+    getCreams,
 };
