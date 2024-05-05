@@ -5,21 +5,17 @@ CREATE DATABASE scd_products;
 CREATE TABLE cream (
     id SERIAL PRIMARY KEY,
     flavor TEXT,
-    items JSONB
-);
-
-CREATE TABLE smokable (
-    id SERIAL PRIMARY KEY,
-    type TEXT,
-    items JSONB
+    price NUMERIC,
+    quantity INTEGER,
+    img TEXT
 );
 
 CREATE TABLE sativa (
     id SERIAL PRIMARY KEY,
     strain TEXT,
     type TEXT,
-    thc NUMERIC,
-    cbd NUMERIC,
+    thc INTEGER,
+    cbd INTEGER,
     taste TEXT,
     size NUMERIC,
     description TEXT,
@@ -32,8 +28,8 @@ CREATE TABLE hybrid (
     id SERIAL PRIMARY KEY,
     strain TEXT,
     type TEXT,
-    thc NUMERIC,
-    cbd NUMERIC,
+    thc INTEGER,
+    cbd INTEGER,
     taste TEXT,
     size NUMERIC,
     description TEXT,
